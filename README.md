@@ -10,4 +10,4 @@ Only two things are of concern:
 1) Group ID: This will be our package name.
 2) Artifact ID: This is our project name (mvn-cmd)
 ```
-[Image](https://github.com/NishkarshRaj/Maven-Using-CMD/blob/master/Screenshots/Create%20Project.png)
+![Image](https://github.com/NishkarshRaj/Maven-Using-CMD/blob/master/Screenshots/Create%20Project.png)
