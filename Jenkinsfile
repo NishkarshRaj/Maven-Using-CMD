@@ -4,17 +4,17 @@ pipeline {
     {
     stage('Clean') {
       steps {
-        mvn clean
+        bat "mvn clean"
       }
     }
     stage('Compile') {
       steps {
-        mvn compile
+        bat "mvn compile"
       }
     }
     stage('Test') {
       steps {
-        mvn test
+        bat "mvn test"
       }
     }
   }
