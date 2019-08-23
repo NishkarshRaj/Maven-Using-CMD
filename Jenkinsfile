@@ -2,11 +2,6 @@ pipeline {
   agent any
   stages 
     {
-    stage('Pom Source') {
-      steps {
-        cd mvn-cmd/
-      }
-    }
     stage('Clean') {
       steps {
         echo 'mvn clean'
