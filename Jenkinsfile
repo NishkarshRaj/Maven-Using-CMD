@@ -1,6 +1,11 @@
 pipeline {
   agent any
   stages {
+        stage('Change Directory to Pom source') {
+      steps {
+        cd mvn-cmd/
+      }
+    }
     stage('Clean') {
       steps {
         mvn clean
