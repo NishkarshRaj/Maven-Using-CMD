@@ -1,24 +1,25 @@
 pipeline {
   agent any
-  stages {
-        stage('Change Directory to Pom source') {
+  stages 
+    {
+    stage('Pom Source') {
       steps {
         cd mvn-cmd/
       }
     }
     stage('Clean') {
       steps {
-        mvn clean
+        echo 'mvn clean'
       }
     }
     stage('Compile') {
       steps {
-        mvn compile
+        echo 'mvn compile'
       }
     }
     stage('Test') {
       steps {
-        mvn test
+        echo 'mvn test'
       }
     }
   }
