@@ -1,5 +1,5 @@
 # Apache Maven (Command Line)
-# Creating a Simple Java Project name: mvn-cmd
+# Creating a Simple Java Project name: mvn-cmd :smile:
 
 ## Step 1: Create the java project
 ```
