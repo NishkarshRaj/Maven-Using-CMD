@@ -73,16 +73,16 @@
     </pluginManagement>
   </build>
   
-  <distributionManagement>
-    <repository>
-      <id>deployment</id>
-      <name>Internal Releases</name>
-      <url>http://localhost:8081/repository/Releases/</url>
-    </repository>
-    <snapshotRepository>
-      <id>deployment</id>
-      <name>Internal Snapshot Releases</name>
-      <url>http://localhost:8081/repository/Snapshot/</url>
-    </snapshotRepository>
-  </distributionManagement>
+<distributionManagement>
+  <repository>
+    <id>release</id>
+    <name>release</name>
+    <url>http://localhost:8081/repository/release/</url>
+  </repository>
+  <snapshotRepository>
+    <id>snapshot</id>
+    <name>snapshot</name>
+    <url>http://localhost:8081/repository/snapshot/</url>
+  </snapshotRepository>
+</distributionManagement>
 </project>
