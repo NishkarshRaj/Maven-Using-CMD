@@ -75,22 +75,22 @@
   
 <repositories>
 	<repository>
-	<id>release</id>
-	<name>release</name>
-	<url>http://localhost:8081/repository/release/</url>
+	<id>testrel</id>
+	<name>testrel</name>
+	<url>http://localhost:8081/repository/testrel/</url>
 	</repository>
 </repositories>
   
 <distributionManagement>
   <repository>
-    <id>release</id>
-    <name>release</name>
-    <url>http://localhost:8081/repository/release/</url>
+    <id>testrel</id>
+    <name>testrel</name>
+    <url>http://localhost:8081/repository/testrel/</url>
   </repository>
   <snapshotRepository>
-    <id>noicecurse</id>
-    <name>noicecurse</name>
-    <url>http://localhost:8081/repository/noicecurse/</url>
+    <id>testsnap</id>
+    <name>testsnap</name>
+    <url>http://localhost:8081/repository/testsnap/</url>
   </snapshotRepository>
 </distributionManagement>
 </project>
