@@ -73,14 +73,6 @@
     </pluginManagement>
   </build>
   
-<repositories>
-	<repository>
-	<id>testrel</id>
-	<name>testrel</name>
-	<url>http://localhost:8081/repository/testrel/</url>
-	</repository>
-</repositories>
-  
 <distributionManagement>
   <repository>
     <id>testrel</id>
