@@ -73,6 +73,14 @@
     </pluginManagement>
   </build>
   
+<repositories>
+	<repository>
+	<id>release</id>
+	<name>release</name>
+	<url>http://localhost:8081/repository/release/</url>
+	</repository>
+</repositories>
+  
 <distributionManagement>
   <repository>
     <id>release</id>
@@ -80,9 +88,9 @@
     <url>http://localhost:8081/repository/release/</url>
   </repository>
   <snapshotRepository>
-    <id>snapshot</id>
-    <name>snapshot</name>
-    <url>http://localhost:8081/repository/snapshot/</url>
+    <id>noicecurse</id>
+    <name>noicecurse</name>
+    <url>http://localhost:8081/repository/noicecurse/</url>
   </snapshotRepository>
 </distributionManagement>
 </project>
