@@ -80,9 +80,9 @@
     <url>http://localhost:8081/repository/testrel/</url>
   </repository>
   <snapshotRepository>
-    <id>testsnap</id>
-    <name>testsnap</name>
-    <url>http://localhost:8081/repository/testsnap/</url>
+    <id>snapshotrepo</id>
+    <name>snapshotrepo</name>
+    <url>http://localhost:8081/repository/snapshotrepo/</url>
   </snapshotRepository>
 </distributionManagement>
 </project>
