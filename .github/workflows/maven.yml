@@ -14,8 +14,8 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Maven
-    - run: mvn clean install
-    - name: Test with Maven
-    - run: mvn test
-    - name: Build site
-    - run: mvn site
+      uses: actions/checkout@v1
+    - run: |
+        sudo mvn clean install
+        mvn test
+        mvn site
