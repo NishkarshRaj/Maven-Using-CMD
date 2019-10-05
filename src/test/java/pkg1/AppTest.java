@@ -28,7 +28,8 @@ public class AppTest
         PrintStream ps = new PrintStream(os);
         System.setOut(ps);
         App.main(null);
-        assertTrue(os.toString().contains("Hello World!"));
+        assertTrue(os.toString().contains("Hello"));
+        assertTrue(os.toString().contains("World"));
     }
 
 }
