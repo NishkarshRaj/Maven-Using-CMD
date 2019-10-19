@@ -1,0 +1,13 @@
+on: push
+name: Main Workflow
+jobs:
+  sonarCloudTrigger:
+    name: SonarCloud Trigger
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: SonarCloud Scan
+      uses: sonarsource/sonarcloud-github-action@master
+      env:
+        GITHUB_TOKEN: 46f3cdb6cb1c519f29183f07c1373bc2779fe352
+        SONAR_TOKEN: 3f7c058aa32f15c30ac609ec22f77835e047d162
