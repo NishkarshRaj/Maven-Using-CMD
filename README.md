@@ -80,3 +80,9 @@ Site Reports are stored in /target/site
 ## Here is one Web Page of Site Report
 
 ![Image](img/mvn%20site%20results.png)
+
+## Contributors
+
+[1. Nishkarsh Raj](github.com/NishkarshRaj)
+
+[2. Mohit Singla](github.com/mohitsingla123)
