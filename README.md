@@ -87,6 +87,17 @@ Site Reports are stored in /target/site
 
 ## Contributors
 
-[1. Nishkarsh Raj](github.com/NishkarshRaj)
+1. @NishkarshRaj
 
-[2. Mohit Singla](github.com/mohitsingla123)
+2. @navyakanu [Special Thanks for setting up GitHub Actions]
+
+3. @acodebreaker
+
+4. @RiyaJohn
+
+5. @tuhinchakraborty
+
+## License
+
+[MIT Licence](LICENSE)
+
