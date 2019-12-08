@@ -81,6 +81,10 @@ Site Reports are stored in /target/site
 
 ![Image](img/mvn%20site%20results.png)
 
+## How To Contribute
+
+[Contribution Guidelines](CONTRIBUTING.md)
+
 ## Contributors
 
 [1. Nishkarsh Raj](github.com/NishkarshRaj)
