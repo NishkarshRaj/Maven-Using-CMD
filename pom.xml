@@ -16,6 +16,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
+    <!--Version of plugin for code format every time code is commited -->
+    <git-code-format-maven-plugin.version>2.4</git-code-format-maven-plugin.version>
   </properties>
 
   <dependencies>
@@ -108,6 +110,47 @@
         </plugins>
       </build>
     </profile>
+    
+    <!--  git-hooks: only active when running alongside .git repo  -->
+<profile>
+<id>git-hooks</id>
+<activation>
+<activeByDefault>false</activeByDefault>
+<file>
+<exists>.git</exists><!-- Where .git exist-->
+</file>
+</activation>
+<build>
+<plugins>
+<plugin>
+<groupId>com.cosium.code</groupId>
+<artifactId>git-code-format-maven-plugin</artifactId>
+<version>${git-code-format-maven-plugin.version}</version>
+<executions>
+<!--  On commit, format the modified java files  -->
+<execution>
+<id>install-formatter-hook</id>
+<goals>
+<goal>install-hooks</goal>
+</goals>
+</execution>
+<!--  On Maven verify phase, fail if any file (including unmodified) is badly formatted  -->
+<execution>
+<id>validate-code-format</id>
+<goals>
+<goal>validate-code-format</goal>
+</goals>
+</execution>
+</executions>
+<configuration>
+<googleJavaFormatOptions>
+<aosp>false</aosp>
+</googleJavaFormatOptions>
+</configuration>
+</plugin>
+</plugins>
+</build>
+</profile>
   </profiles>
   
 <distributionManagement>
