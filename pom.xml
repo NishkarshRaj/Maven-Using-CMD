@@ -17,7 +17,7 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
     <!--Version of plugin for code format every time code is commited -->
-    <git-code-format-maven-plugin.version>3.0</git-code-format-maven-plugin.version>
+    <git-code-format-maven-plugin.version>3.4</git-code-format-maven-plugin.version>
   </properties>
 
   <dependencies>
