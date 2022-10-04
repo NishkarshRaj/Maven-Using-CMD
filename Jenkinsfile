@@ -2,17 +2,17 @@ pipeline {
   agent any
   stages 
     {
-    stage('Clean') {
+    stage('Clean The Maven') {
       steps {
         bat 'mvn clean'
       }
     }
-    stage('Compile') {
+    stage('Compile The Java File') {
       steps {
         bat 'mvn compile'
       }
     }
-    stage('Test') {
+    stage('Test The File') {
       steps {
         bat 'mvn test'
       }
